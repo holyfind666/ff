@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend-разработчик Кирилл — создаю адаптивные сайты и интерфейсы из Figma. Верстка HTML, CSS, Bootstrap. Быстро и качественно.">
+    <title>Кирилл | Frontend Developer — Верстка сайтов любой сложности</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Твой CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-code-slash me-2"></i>Кирилл
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+                <a href="https://t.me/pluxury_kkkkkkkkkkkkkkkkkk" target="_blank" class="btn btn-primary ms-lg-3 mt-3 mt-lg-0">
+                    <i class="bi bi-telegram me-2"></i>Написать
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="hero-badge mb-4">
+                        <span class="status-dot"></span>
+                        Открыт для проектов
+                    </div>
+                    <h1 class="hero-title mb-4">
+                        Создаю сайты,<br>
+                        <span class="text-gradient">которые продают</span>
+                    </h1>
+                    <p class="hero-description mb-5">
+                        Превращаю ваш дизайн в адаптивный, быстрый и современный сайт. 
+                        Верстаю из Figma с вниманием к каждой детали. 
+                        Ваши клиенты будут видеть идеальную картинку на любом устройстве.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <a href="#portfolio" class="btn btn-primary btn-lg px-4 py-3">
+                            <i class="bi bi-eye me-2"></i>Смотреть работы
+                        </a>
+                        <a href="https://t.me/pluxury_kkkkkkkkkkkkkkkkkk" target="_blank" class="btn btn-outline-light btn-lg px-4 py-3">
+                            <i class="bi bi-telegram me-2"></i>Написать в Telegram
+                        </a>
+                    </div>
+                    <div class="hero-stats d-flex gap-4">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Готовых проекта</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">HTML/CSS</span>
+                            <span class="stat-label">Bootstrap • SCSS</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Адаптивная верстка</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="hero-visual">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="code-body">
+                                <code>
+                                    <span class="tag"><</span><span class="tag-name">div</span> <span class="attr">class</span>=<span class="string">"success"</span><span class="tag">></span><br>
+                                    &nbsp;&nbsp;Сайт готов! 🚀<br>
+                                    <span class="tag"></</span><span class="tag-name">div</span><span class="tag">></span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <i class="bi bi-person-circle display-1 text-white"></i>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="fw-bold">Junior</span><br>
+                            <small>Frontend Dev</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-label">Обо мне</div>
+                    <h2 class="section-title mb-4">Привет, я Кирилл —<br>frontend-разработчик</h2>
+                    <p class="about-text mb-4">
+                        Специализируюсь на верстке адаптивных сайтов и интерфейсов. 
+                        Работаю с макетами Figma, превращая их в чистый, валидный код 
+                        с использованием HTML5, CSS3 и Bootstrap 5.
+                    </p>
+                    <p class="about-text mb-4">
+                        Мой подход — это сочетание технической точности и чувства дизайна. 
+                        Верстаю pixel-perfect, продумываю UX-логику и всегда тестирую 
+                        результат на всех устройствах: от смартфонов до широких мониторов.
+                    </p>
+                    <div class="tech-stack d-flex flex-wrap gap-2 mb-4">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">SCSS/SASS</span>
+                        <span class="tech-badge">Bootstrap 5</span>
+                        <span class="tech-badge">Flexbox</span>
+                        <span class="tech-badge">CSS Grid</span>
+                        <span class="tech-badge">Figma</span>
+                        <span class="tech-badge">Git</span>
+                        <span class="tech-badge">Адаптивная верстка</span>
+                        <span class="tech-badge">Кроссбраузерность</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/holyfind666" target="_blank" class="social-link" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://t.me/pluxury_kkkkkkkkkkkkkkkkkk" target="_blank" class="social-link" title="Telegram">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                        <a href="mailto:kirillefim666@gmail.com" class="social-link" title="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">Портфолио</div>
+                <h2 class="section-title">Мои проекты</h2>
+                <p class="section-subtitle">Реальные работы, которые можно посмотреть</p>
+            </div>
+            <div class="row g-4">
+                
+                <!-- Проект 1: HolyFind (основной сайт) -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://placehold.co/600x400/6366f1/white?text=HolyFind" alt="HolyFind - основной сайт" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <a href="https://holyfind666.github.io/holyfind/about.html" class="btn btn-light btn-sm me-2" target="_blank">
+                                    <i class="bi bi-eye"></i> Демо
+                                </a>
+                                <a href="https://github.com/holyfind666/holyfind" class="btn btn-light btn-sm" target="_blank">
+                                    <i class="bi bi-github"></i> Код
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Многостраничный сайт</span>
+                            <h5 class="portfolio-title">HolyFind</h5>
+                            <p class="portfolio-description">
+                                Собственный сайт с несколькими страницами, адаптивным дизайном и современной версткой. Работа с HTML, CSS, JavaScript.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 2: Админ-панель -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://placehold.co/600x400/8b5cf6/white?text=Admin+Panel" alt="HolyFind Admin Panel" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/holyfind666/holy-find-admin" class="btn btn-light btn-sm" target="_blank">
+                                    <i class="bi bi-github"></i> Код
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Админ-панель</span>
+                            <h5 class="portfolio-title">HolyFind Admin</h5>
+                            <p class="portfolio-description">
+                                Административная панель с таблицами, формами и навигацией. Интерфейс для управления данными.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Bootstrap</span>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 3: Веб-безопасность -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://placehold.co/600x400/06b6d4/white?text=Web+Security" alt="Сайт по веб-безопасности" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/holyfind666/PRACTIKA" class="btn btn-light btn-sm" target="_blank">
+                                    <i class="bi bi-github"></i> Код
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Информационная безопасность</span>
+                            <h5 class="portfolio-title">Веб-безопасность</h5>
+                            <p class="portfolio-description">
+                                Учебный проект по веб-безопасности. Демонстрация уязвимостей и методов защиты веб-приложений.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>PHP</span>
+                                <span>Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 4: Новый проект (заглушка) -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://placehold.co/600x400/f59e0b/white?text=Coming+Soon" alt="Будущий проект" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2 disabled">
+                                    <i class="bi bi-eye"></i> Скоро
+                                </a>
+                                <a href="#" class="btn btn-light btn-sm disabled">
+                                    <i class="bi bi-github"></i> Скоро
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">В разработке</span>
+                            <h5 class="portfolio-title">Новый проект</h5>
+                            <p class="portfolio-description">
+                                Здесь будет мой следующий проект. Следите за обновлениями на GitHub!
+                            </p>
+                            <div class="portfolio-tech">
+                                <span>Coming soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">Услуги</div>
+                <h2 class="section-title">Чем я могу вам помочь</h2>
+                <p class="section-subtitle">Предлагаю решения для бизнеса любого масштаба</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-window-stack"></i>
+                        </div>
+                        <h5 class="service-title">Верстка лендинга</h5>
+                        <p class="service-description">
+                            Создам одностраничный сайт, который будет отлично выглядеть на всех устройствах. 
+                            Адаптивный дизайн, быстрая загрузка, правильная структура для SEO.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Pixel Perfect верстка из Figma</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Адаптив под все устройства</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Оптимизация скорости загрузки</li>
+                        </ul>
+                        <div class="service-price">от 5 000 ₽</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card popular">
+                        <div class="popular-badge">Популярное</div>
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-file-earmark-code"></i>
+                        </div>
+                        <h5 class="service-title">Figma → HTML/CSS</h5>
+                        <p class="service-description">
+                            Перенесу ваш дизайн из Figma в чистый, валидный код. 
+                            Использую Bootstrap или пишу на чистом CSS — как вам удобнее.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Точное соответствие макету</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Компонентный подход</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Документирование кода</li>
+                        </ul>
+                        <div class="service-price">от 3 000 ₽</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h5 class="service-title">Адаптация под мобильные</h5>
+                        <p class="service-description">
+                            Исправлю отображение сайта на смартфонах и планшетах. 
+                            Протестирую на реальных устройствах и разных браузерах.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Корректировка адаптива</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Тест на iOS и Android</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Исправление багов верстки</li>
+                        </ul>
+                        <div class="service-price">от 2 000 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Процесс работы -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">Как я работаю</div>
+                <h2 class="section-title">Процесс сотрудничества</h2>
+                <p class="section-subtitle">Прозрачность и результат на каждом этапе</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-card text-center">
+                        <div class="process-number">01</div>
+                        <h5>Обсуждение</h5>
+                        <p>Вы рассказываете о задаче, показываете макет. Я задаю уточняющие вопросы и оцениваю сроки.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-card text-center">
+                        <div class="process-number">02</div>
+                        <h5>Верстка</h5>
+                        <p>Пишу чистый код. Делаю промежуточные демо, чтобы вы могли видеть прогресс и вносить правки.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-card text-center">
+                        <div class="process-number">03</div>
+                        <h5>Тестирование</h5>
+                        <p>Проверяю на всех устройствах и браузерах. Исправляю баги, оптимизирую скорость загрузки.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-card text-center">
+                        <div class="process-number">04</div>
+                        <h5>Сдача проекта</h5>
+                        <p>Передаю готовый код. Даю рекомендации по использованию. Остаюсь на связи для поддержки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты с рабочей формой -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="section-label">Контакты</div>
+                    <h2 class="section-title mb-4">Давайте обсудим<br>ваш проект</h2>
+                    <p class="contact-intro mb-5">
+                        Расскажите о задаче, и я отвечу в течение нескольких часов. 
+                        Работаю удаленно, готов к сотрудничеству.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="https://t.me/pluxury_kkkkkkkkkkkkkkkkkk" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="bi bi-telegram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Telegram</strong>
+                                <span>@pluxury_kkkkkkkkkkkkkkkkkk</span>
+                                <small>Быстрее всего</small>
+                            </div>
+                        </a>
+                        <a href="mailto:kirillefim666@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Email</strong>
+                                <span>kirillefim666@gmail.com</span>
+                                <small>Для ТЗ и файлов</small>
+                            </div>
+                        </a>
+                        <a href="https://github.com/holyfind666" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>GitHub</strong>
+                                <span>github.com/holyfind666</span>
+                                <small>Мои проекты</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <h4 class="mb-4">Отправьте заявку</h4>
+                        <form id="contactForm" action="https://formspree.io/f/xpqggara" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Ваше имя *</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Иван Петров" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contact-input" class="form-label">Email или Telegram *</label>
+                                    <input type="text" class="form-control" id="contact-input" name="contact" placeholder="Как с вами связаться" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="project-type" class="form-label">Тип проекта</label>
+                                    <select class="form-select" id="project-type" name="project-type">
+                                        <option value="" selected disabled>Выберите тип...</option>
+                                        <option value="landing">Лендинг</option>
+                                        <option value="corporate">Корпоративный сайт</option>
+                                        <option value="shop">Интернет-магазин</option>
+                                        <option value="fix">Исправление верстки</option>
+                                        <option value="other">Другое</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Опишите задачу *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Что нужно сделать? Есть ли макет? Какие сроки?" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                                        <i class="bi bi-send-fill me-2"></i>Отправить заявку
+                                    </button>
+                                    <div id="formMessage" class="mt-3" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">© 2026 Кирилл — Frontend Developer</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://t.me/pluxury_kkkkkkkkkkkkkkkkkk" target="_blank" class="footer-link me-3">Telegram</a>
+                    <a href="https://github.com/holyfind666" target="_blank" class="footer-link me-3">GitHub</a>
+                    <a href="mailto:kirillefim666@gmail.com" class="footer-link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Твой JS -->
+    <script src="script.js"></script>
+</body>
+</html>
