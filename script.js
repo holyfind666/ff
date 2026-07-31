@@ -45,7 +45,6 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const formData = new FormData(this);
 
     try {
-        // Замени 'your-form-id' на ID твоей формы из Formspree
         const response = await fetch('https://formspree.io/f/xpqggara', {
             method: 'POST',
             body: formData,
@@ -65,7 +64,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     } catch (error) {
         formMessage.style.display = 'block';
         formMessage.className = 'alert alert-warning mt-3';
-        formMessage.innerHTML = '<i class="bi bi-exclamation-triangle-fill me-2"></i>Что-то пошло не так. Напишите мне напрямую в Telegram: <a href="https://t.me/your_username">@your_username</a>';
+        formMessage.innerHTML = '<i class="bi bi-exclamation-triangle-fill me-2"></i>Что-то пошло не так. Напишите мне напрямую в Telegram: <a href="https://t.me/pluxury_kkkkkkkkkkkkkkkkkk">@pluxury_kkkkkkkkkkkkkkkkkk</a>';
     } finally {
         submitBtn.innerHTML = originalBtnText;
         submitBtn.disabled = false;
